@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".InstructionPage">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:textColor="@color/colorPrimary"
+    android:textStyle="bold"
+    android:textSize="16dp"
+    android:textAlignment="center"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:text="Please Read The Instructions carefully before Starting the test "/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:textAlignment="center"
+    android:textColor="#000"
+    android:padding="4dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"
+    android:text="The quizzes consists of questions carefully designed to help you self-assess your comprehension of the information presented on the topics covered in the module. No data will be collected on the website regarding your responses or how many times you take the quiz."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Each question in the quiz is of multiple-choice or true or false format. Read each question carefully, and click on the button next to your response that is based on the information covered on the topic in the module. Each correct or incorrect response will result in appropriate feedback immediately at the bottom of the screen."></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="After responding to a question, click on the Next Question button at the bottom to go to the next questino. After responding to the 8th question, click on Close on the top of the window to exit the quiz."
+      />
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="If you select an incorrect response for a question, you can try again until you get the correct response. If you retake the quiz, the questions and their respective responses will be randomized.">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="The total score for the quiz is based on your responses to all questions. If you respond incorrectly to a question or retake a question again and get the correct response, your quiz score will reflect it appropriately. However, your quiz will not be graded, if you skip a question or exit before responding to all the questions."
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="Multiple Attempts - You will have three attempts for this quiz with your highest score being recorded in the grade book.
+Timing - You will need to complete each of your attempts in one sitting, as you are allotted 60 minutes to complete each attempt.
+Answers - You may review your answer-choices and compare them to the correct answers after your final attempt."></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="3dp"
+        android:textAllCaps="false"
+        android:padding="6dp"
+        android:id="@+id/btn"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded"
+        android:text="Next"/>
+        </LinearLayout></ScrollView></LinearLayout>
