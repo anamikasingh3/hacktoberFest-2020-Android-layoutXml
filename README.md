@@ -1,5 +1,3 @@
-## HacktoberFest-2020-Android-layoutXml
-
 # Easy Contribution to Hacktoberfest by adding a xml file of your Android-layout, also add a screenshot.
 
 Hey, HacktoberFest is here, so here is a project for Android developers
