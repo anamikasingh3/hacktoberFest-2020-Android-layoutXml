@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        style="?android:progressBarStyleHorizontal"/>
+
+    <com.github.bassaer.chatmessageview.view.ChatView
+        android:id="@+id/my_chat_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        
+    <!-- com.github.bassaer:chatmessageview:2.1.0 -->
+</RelativeLayout>
