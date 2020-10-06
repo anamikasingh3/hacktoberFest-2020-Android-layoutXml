@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/item_image"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/item_name"
+            android:fontFamily="@font/baloo"
+
+            android:text="Slipstick CB6523 3 Inch"
+            android:textColor="@color/black"
+            android:textSize="14sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gfs_neohellenic"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-10dp"
+            android:text="Click to buy"
+            android:textAllCaps="true"
+            android:textColor="@color/grey"
+
+            android:textSize="12sp"></TextView>
+
+        <ImageView
+            android:id="@+id/link_image"
+            android:layout_width="27dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/ic_amazon_icon_1"
+            android:layout_height="27dp"
+            android:layout_marginTop="-10dp"
+            ></ImageView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
