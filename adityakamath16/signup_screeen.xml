@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Signup_activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/chatitlogo"/>
+                    <TextView
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:text="Create an account on ChatIt"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/userid_signup_outlinedTextField"
+                            android:outlineAmbientShadowColor="@color/colorPrimary"
+                            app:boxBackgroundColor="#ffffff"
+                            app:boxStrokeColor="@color/colorPrimary"
+                            android:outlineSpotShadowColor="@color/colorPrimary"
+
+                            android:textColorHint="@color/colorAccent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="UserId"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/user_id_signup_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:outlineSpotShadowColor="@color/colorPrimary"
+                                android:shadowColor="@color/colorPrimary"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/email_signup_outlinedTextField"
+                            android:outlineAmbientShadowColor="@color/colorPrimary"
+                            app:boxBackgroundColor="#ffffff"
+                            app:boxStrokeColor="@color/colorPrimary"
+                            android:outlineSpotShadowColor="@color/colorPrimary"
+
+                            android:textColorHint="@color/colorAccent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/email_signup_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:outlineSpotShadowColor="@color/colorPrimary"
+                                android:shadowColor="@color/colorPrimary" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/password_signup_outlinedTextField"
+                            android:outlineAmbientShadowColor="@color/colorPrimary"
+                            app:boxBackgroundColor="#ffffff"
+                            app:boxStrokeColor="@color/colorPrimary"
+                            android:outlineSpotShadowColor="@color/colorPrimary"
+
+                            android:textColorHint="@color/colorAccent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:inputType="textPassword"
+                                android:id="@+id/password_signup_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:outlineSpotShadowColor="@color/colorPrimary"
+                                android:shadowColor="@color/colorPrimary"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/signup_screen_signup_btn"
+                            android:text="SIGNUP"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/button_blue_back"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/signup_already_have_an_account"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Already Have a account?"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
