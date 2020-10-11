@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saeed.watersupplysoft.activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_login_background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundBlue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/water_supply_soft"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Water Supply Soft"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:layout_marginBottom="15dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:id="@+id/rbGroup"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:id="@+id/rbAdmin"
+                android:textColor="@color/white"
+                android:checked="true"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/rbDeliveryBoy"
+                android:text="Delivery Boy" />
+
+        </RadioGroup>
+
+
+
+        <EditText
+            style="@style/EditText.Flat.Grey"
+            android:textColorHint="@color/grey_5"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_round_bg_overlay_white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:id="@+id/edtPhoneNumber"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            style="@style/EditText.Flat.Grey"
+            android:textColorHint="@color/grey_5"
+            android:drawableLeft="@drawable/ic_vpn_key"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_round_bg_overlay_white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Password"
+            android:id="@+id/edtPassword"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:text="Forgot Password?"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_5"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:background="@drawable/btn_rounded_white"
+            android:text="Login"
+            android:id="@+id/btnLogin"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textColor="@color/indigo_900" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New user? "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Sign Up"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/indigo_900"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
