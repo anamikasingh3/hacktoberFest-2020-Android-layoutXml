@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignupActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_login_background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundBlue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Sign Up"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:minHeight="40dp"
+            android:hint="Full Name"
+            android:id="@+id/edtRegFullName"
+            android:textColor="@android:color/white"
+            style="@style/EditText.Flat.Grey"
+            android:textColorHint="@color/grey_5"
+            android:background="@drawable/edit_text_round_bg_overlay_white"
+            android:drawableRight="@drawable/ic_person"
+            android:drawablePadding="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="50dp"/>
+
+        <EditText
+            style="@style/EditText.Flat.Grey"
+            android:textColorHint="@color/grey_5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_round_bg_overlay_white"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Company Name"
+            android:drawableRight="@drawable/ic_domain"
+            android:drawablePadding="15dp"
+            android:id="@+id/edtRegCompanyName"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            style="@style/EditText.Flat.Grey"
+            android:textColorHint="@color/grey_5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_round_bg_overlay_white"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Company Address"
+            android:drawableRight="@drawable/ic_location"
+            android:drawablePadding="15dp"
+            android:id="@+id/edtRegCompanyAddress"
+            android:inputType="text"
+            android:maxLines="3"
+            android:lines="3"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            style="@style/EditText.Flat.Grey"
+            android:textColorHint="@color/grey_5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_round_bg_overlay_white"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:maxLength="11"
+            android:hint="Phone Number"
+            android:drawableRight="@drawable/ic_phone"
+            android:drawablePadding="15dp"
+            android:id="@+id/edtRegPhone"
+            android:inputType="number"
+            android:textColor="@android:color/white" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="15dp"
+           >
+
+            <EditText
+            style="@style/EditText.Flat.Grey"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/grey_5"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_round_bg_overlay_white"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Password"
+            android:id="@+id/edtRegPassword"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:layout_marginTop="25dp"
+            android:text="REGISTER"
+            android:id="@+id/btnRegisterUser"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/btn_rect_white_overlay"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
