@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_home"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.AuthActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgLoginLogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:riv_corner_radius="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/in_app_logo" />
+
+            <TextView
+                android:id="@+id/txtLoginQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="center"
+                android:text="@string/quote"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <EditText
+                        android:id="@+id/etLoginMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableLeft="@drawable/ic_call_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/colorAccent"
+                        android:ems="10"
+                        android:fontFamily="@font/seguisb"
+                        android:hint="Enter Mobile No."
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="#707070"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etLoginPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:drawableStart="@drawable/ic_lock_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorAccent"
+                            android:ems="10"
+                            android:fontFamily="@font/seguisb"
+                            android:hint="Enter Password"
+                            android:inputType="textPassword"
+                            android:padding="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="#707070"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/txtLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_acc_fill"
+                        android:fontFamily="@font/seguisb"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="Login"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtLoginRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:drawableRight="@drawable/ic_next_dark"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/seguisb"
+                android:gravity="right"
+                android:text="@string/not_registered_yet"
+                android:textColor="#212121"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
